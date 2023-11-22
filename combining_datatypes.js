@@ -98,7 +98,7 @@ const vendingMachine = [
 ];
 
 const vend = (userChoice) => {
-    return userChoice -= 1 // this will return the value of the index
+    return userChoice -= 1 // this will return the value of the index from the id selected
 }
 
 // a vending machine has a function vend that allows user to enter the array position (a number) of the snack and then that snack will be returned
@@ -109,5 +109,49 @@ console.log(vendingMachine[vend(3)])
 // this works but im having trouble with .vend working? does that need to be a method? I need to have the variable somehow ensure its delivering an index
 
 
+// **********************************
+
+// Callbacks
+// Make a function add that takes two arguments (numbers) and sums them together
+const add = (number1, number2) => {
+    return number1 + number2
+}
+
+console.log(add(3, 4))
+
+// Make a function subtract that takes two arguments (numbers) and subtracts them
+const subtract = (number1, number2) => {
+    return number1 - number2
+}
+
+console.log(subtract(3, 4))
 
 
+// Make a function multiply that takes two arguments and multiplies them
+const multiply = (number1, number2) => {
+    return number1 * number2
+}
+
+console.log(multiply(3, 4))
+
+
+// Make a function divide that takes two arguments and divides them
+const divide = (number1, number2) => {
+    return number1 / number2
+}
+
+console.log(divide(3, 4))
+
+// Make a function calculate that takes three arguments. Assume the two arguments are a number ie num1, num2 and a function called operates (a callback).
+const calculate = (number1, number2, operates) => {
+    return operates(number1, number2)
+}
+
+// Make it so that when calculate is invoked, the callback "operates" on the numbers and returns the value.
+
+console.log(calculate(3, 4, add))
+console.log(calculate(3, 4, subtract))
+console.log(calculate(3, 4, multiply))
+console.log(calculate(3, 4, divide))
+
+// Call calculate 4 times, each time using one of the operation functions you wrote
