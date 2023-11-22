@@ -188,3 +188,6 @@ foo();
 
 // missing initializer in const declaration. translation: I dont have an equal sign in there
 // next error: cannot access foo befor initalization. need to have the function defined about where we call it
+
+
+
