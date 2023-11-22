@@ -72,3 +72,42 @@ const powerButton = () => {
 }
 
 powerButton()
+
+// Model a Vending Machine
+
+// a vending machine is an object
+// it has an array of snacks (make 3 snacks)
+// snacks are objects that have a name and a price
+
+const vendingMachine = [
+    {
+    id: 1,
+    name: "belvita",
+    price: 2.25
+    },
+    {
+    id: 2,
+    name: "nutrigrain bar",
+    price: 1.75
+    },
+    {
+    id: 3,
+    name: "cliff bar",
+    price: 3.25
+    }
+];
+
+const vend = (userChoice) => {
+    return userChoice -= 1 // this will return the value of the index
+}
+
+// a vending machine has a function vend that allows user to enter the array position (a number) of the snack and then that snack will be returned
+// Be able to call vendingMachine.vend() with a valid integer to return a snack
+
+console.log(vendingMachine[vend(3)])
+
+// this works but im having trouble with .vend working? does that need to be a method? I need to have the variable somehow ensure its delivering an index
+
+
+
+
