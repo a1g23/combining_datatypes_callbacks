@@ -155,3 +155,36 @@ console.log(calculate(3, 4, multiply))
 console.log(calculate(3, 4, divide))
 
 // Call calculate 4 times, each time using one of the operation functions you wrote
+
+
+
+// clean up this code
+// we want variables/functions up top and then we'll call them at the end
+// to ensure that it runs, we have to make sure the code block in the next question is commented out
+
+// const bar = () => {
+//     console.log('bar here');
+// }
+// const foo = () => {
+//     console.log('foo here');
+// }
+
+// bar();
+
+// foo();
+
+
+
+
+
+// Error Reading
+
+
+
+const foo = ()=>{
+    console.log('hi');
+}
+foo();
+
+// missing initializer in const declaration. translation: I dont have an equal sign in there
+// next error: cannot access foo befor initalization. need to have the function defined about where we call it
